@@ -1,0 +1,119 @@
+:root {
+    --card-radius: 40px;
+    --fds-font-family-fallback: "Segoe UI", system-ui, sans-serif;
+    --fds-font-family-text: "Segoe UI Variable Text", "Seoge UI Variable Static Text", var(--fds-font-family-fallback);
+    --fds-font-family-small: "Segoe UI Variable Small", "Seoge UI Variable Static Small", var(--fds-font-family-fallback);
+    --fds-font-family-display: "Segoe UI Variable Display", "Seoge UI Variable Static Display", var(--fds-font-family-fallback);
+
+
+	--header_height: 50px
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		/* Texts */
+		--default-color: #000000de;
+		--text-secondary: #000000c8;
+		--text-tertiary: #0000005c;
+		
+		/* Colors */
+		--bg-color: white;
+		
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Texts */
+		--default-color: #ffffffde;
+		--text-secondary: #ffffffc8;
+		--text-tertiary: #d4d4d466;
+
+		/* Colors */
+		--bg-color:#121212;
+	}
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: var(--fds-font-family-text);
+    background-color: var(--bg-color);
+    margin: 0;
+}
+p{
+	margin: 0;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/*------------------------------------------------------------
+							~ NavBar ~
+------------------------------------------------------------*/
+header{
+	display: flex;
+	justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+	background-color: #ffffff29;
+	backdrop-filter: blur(70px);
+}
+header>section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	height: var(--header_height);
+}
+header img{
+	max-height: 50px;
+	width: 35px;
+}
+
+nav button{
+	height: 50px;
+	border: 0;
+	background-color: transparent;
+	padding: 0px 30px;
+}
+nav button:hover{
+	background-color: aqua;
+}
+
+
+
+#contributions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+#contributiondetails{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#contributiondetails article{
+	border-radius: 40px;
+	padding: 30px;
+	height: 170px;
+	max-width: 800px;
+    margin-top: 25px;
+    width: 50vw;
+}
+#xiaomiHome{
+	background: linear-gradient(315deg, #17d39d70, #19c88670, #00ff8070);
+}
+#riseMP{
+	background: linear-gradient(140deg, #f37a5870, #d8507670, #c4328c70);
+}
+#tocome{
+	background: linear-gradient(140deg, #dfdfdf3b, #dfdfdf3b, #dfdfdf3b);
+}
