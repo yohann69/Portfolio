@@ -29,7 +29,7 @@
 		--text-tertiary: #d4d4d466;
 
 		/* Colors */
-		--bg-color:#121212;
+		--bg-color:black; /*#121212;*/
 	}
 }
 
@@ -38,6 +38,7 @@ body {
     font-family: var(--fds-font-family-text);
     background-color: var(--bg-color);
     margin: 0;
+	color: var(--default-color);
 }
 p{
 	margin: 0;
@@ -47,6 +48,9 @@ h2 {
     font-size: 55px;
     font-weight: 400;
     margin: 0;
+}
+*{
+	transition: ease-in-out 100ms;
 }
 
 /*------------------------------------------------------------
@@ -59,8 +63,12 @@ header{
     top: 0;
     width: 100%;
 
-	background-color: #ffffff29;
-	backdrop-filter: blur(70px);
+	background-color: #3636365c;
+	backdrop-filter: blur(200px);
+}
+header * {
+	user-select: none;
+	margin: 0;
 }
 header>section{
 	display: flex;
@@ -75,16 +83,19 @@ header img{
 	width: 35px;
 }
 
-nav button{
-	height: 50px;
-	border: 0;
-	background-color: transparent;
-	padding: 0px 30px;
+nav button:hover {
+    background-color: #5c5c5c42;
+    border-radius: 0px;
+    /*border-bottom: 3px solid;*/
+    color: white;
 }
-nav button:hover{
-	background-color: aqua;
+nav button {
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    padding: 0px 30px;
+    color: #ffffff9e;
 }
-
 
 
 #contributions {
@@ -108,12 +119,76 @@ nav button:hover{
     margin-top: 25px;
     width: 50vw;
 }
+
+#contributiondetails button {
+    padding: 12px 25px;
+    border-radius: 100px;
+    border: 0;
+    background-color: #bbbbbb99;
+}
+#contributiondetails button:hover {
+    background-color: #ffffffa1;
+}
+
+
+#xiaomiHome, #riseMP, #products{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contributiondetails section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
 #xiaomiHome{
-	background: linear-gradient(315deg, #17d39d70, #19c88670, #00ff8070);
+	background: -webkit-linear-gradient(175deg, #64f762c9, #51feb6c9);
 }
+
 #riseMP{
-	background: linear-gradient(140deg, #f37a5870, #d8507670, #c4328c70);
+	background: -webkit-linear-gradient(-80deg, #f77062, #fe5196);
 }
-#tocome{
+#products{
 	background: linear-gradient(140deg, #dfdfdf3b, #dfdfdf3b, #dfdfdf3b);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav button:hover:after {
+    background-color: #b0b0b0;
+    height: 3px;
+    width: 85px;
+    margin-top: 15px;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: -30px;
 }
