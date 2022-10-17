@@ -5,6 +5,7 @@
 :root {
 	--card-radius: 40px;
 	--radius-norm: 8px;
+	--radius-middle: 20px;
 	--font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
 }
@@ -53,10 +54,19 @@ body {
 	color: var(--default-color);
 	-webkit-user-select: none;
 	user-select: none;
+	-webkit-user-drag: none;
 }
-p, h1, h2, h3, h4, h5, h6 {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: .5em 0;
 }
+
 h2 {
 	text-transform: uppercase;
 	font-size: 55px;
@@ -64,6 +74,15 @@ h2 {
 	margin: 0;
 }
 
+
+main>section {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 120px;
+}
 
 
 /*------------------------------------------------------------
@@ -93,7 +112,7 @@ nav img {
 	width: 20px;
 }
 
-nav section a{
+nav section a {
 	margin: 0 40px;
 }
 
@@ -116,10 +135,7 @@ nav section a{
 ------------------------------------------------------------*/
 
 #contributions {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	align-items: center;
+	flex-direction: row;
 }
 
 #contributions article {
@@ -133,131 +149,61 @@ nav section a{
 	border-radius: var(--card-radius);
 }
 
-#contributions article:first-child{
+#contributions article:first-child {
 	margin-top: 0;
 }
 
-#contributions img{
+.description {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-right: 40px;
+}
+
+#contributions img {
 	width: 100px;
 }
 
+.xiaomiHome {
+	background: -webkit-linear-gradient(135deg, #2cb02ac9, #44d1bec9);
+	box-shadow: 3px 5px 15px #005b08a3;
+}
+
+.traductions {
+	background: -webkit-linear-gradient(175deg, #c30000c9, #3c41d8c9);
+	box-shadow: 3px 5px 15px #5b003ea3;
+}
+
+.productTesting {
+	background: -webkit-linear-gradient(115deg, #a69515, #c6601f);
+	box-shadow: 3px 5px 15px #5b4100a3;
+	/* background: -webkit-linear-gradient(115deg, #dea92c, #de712c); */
+}
 
 
 
 
+/*------------------------------------------------------------
+						~ Contacts ~
+------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-/* header {
+#contact>section {
+	background-image: url(https://ade.pages.dev/Ressources/img/bloom-mica-dark.png);
+	background-size: cover;
+	width: 95%;
+	max-width: 850px;
+	height: 470px;
+	border-radius: var(--radius-middle);
+	padding: 20px;
 	display: flex;
+	align-items: flex-end;
 	justify-content: center;
-	position: fixed;
-	top: 0;
-	width: 100%;
-
-	background-color: #3636365c;
-	backdrop-filter: blur(200px);
-}
-header * {
-	user-select: none;
-	margin: 0;
-}
-header > section {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 80%;
-	height: var(--header_height);
-}
-header img {
-	max-height: 50px;
-	width: 35px;
+	flex-direction: column;
 }
 
-nav button:hover {
-	background-color: #5c5c5c42;
-	border-radius: 0px;
+ion-icon {
+	font-size: 40px;
+	padding: 0 10px;
 	color: white;
 }
-nav button {
-	height: 50px;
-	border: 0;
-	background-color: transparent;
-	padding: 0px 30px;
-	color: #ffffff9e;
-}
-
-#contributions {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 100vh;
-}
-
-#contributiondetails {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-#contributiondetails article {
-	border-radius: 40px;
-	padding: 30px;
-	max-width: 800px;
-	margin-top: 25px;
-	width: 50vw;
-}
-
-#contributiondetails button {
-	padding: 10px 22px;
-	border-radius: 100px;
-	border: 1px solid;
-	background-color: transparent;
-}
-#contributiondetails button:hover {
-	background-color: #ffffffa1;
-}
-
-#xiaomiHome,
-#riseMP,
-#products {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-#contributiondetails section {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
-
-#xiaomiHome {
-	background: -webkit-linear-gradient(175deg, #64f762c9, #51feb6c9);
-}
-
-#riseMP {
-	background: -webkit-linear-gradient(-80deg, #f77062, #fe5196);
-}
-#products {
-	background: linear-gradient(140deg, #dfdfdf3b, #dfdfdf3b, #dfdfdf3b);
-}
-
-nav button:hover:after {
-	background-color: #b0b0b0;
-	height: 3px;
-	width: 85px;
-	margin-top: 15px;
-	content: "";
-	display: block;
-	position: absolute;
-	margin-left: -30px;
-} */
