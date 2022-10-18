@@ -30,7 +30,7 @@
 		<section id="home">
 
 		</section>
-		
+
 		<section id="aboutMe">
 			<p>d</p>
 			<p>d</p>
@@ -69,71 +69,71 @@
 			<h2>Projets</h2>
 			<section>
 
-					<article class="project-small">
-						<img src="https://ade.pages.dev/Ressources/img/calendaricon.png" alt="logo"/>
-						<h3>Ade Calendar</h3>
-						<section>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-						</section>
-						<a href="https://ade.pages.dev" target="_blank"><button>Lets go</button></a>
-					</article>
-					<article>
-						<img src="img/mijalogo.png" alt="logo"/>
-						<h3>AutoCars</h3>
-						<section>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-						</section>
-						<a href="https://autocars.eu.org" target="_blank"><button>Lets go</button></a>
-					</article>
-					<article class="project-small">
-						<img src="img/mijalogo.png" alt="logo"/>
-						<h3>Portfolio</h3>
-						<section>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-							<p>d</p>
-						</section>
-						<a href="https://portfolio.chavanel.eu.org"><button>Lets go</button></a>
-					</article>
+				<article class="project-small">
+					<img src="https://ade.pages.dev/Ressources/img/calendaricon.png" alt="logo" />
+					<h3>Ade Calendar</h3>
+					<section>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+					</section>
+					<a href="https://ade.pages.dev" target="_blank"><button>Lets go</button></a>
+				</article>
+				<article>
+					<img src="img/autocars.png" alt="logo" class="autocarsLogo"/>
+					<h3>AutoCars</h3>
+					<section>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+					</section>
+					<a href="https://autocars.eu.org" target="_blank"><button>Lets go</button></a>
+				</article>
+				<article class="project-small">
+					<img src="img/mijalogo.png" alt="logo" />
+					<h3>Portfolio</h3>
+					<section>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+						<p>d</p>
+					</section>
+					<a href="https://portfolio.chavanel.eu.org"><button>Lets go</button></a>
+				</article>
 			</section>
 
 		</section>
@@ -185,32 +185,49 @@
 		<section id="contact">
 			<h2>Contact</h2>
 
-			<section class="socialsMedias">
-				<section>
-					<a href="mailto:test@gmail.com">
-						<ion-icon name="mail"></ion-icon>
-					</a>
-					<a href="tel:+33678139913">
-						<ion-icon name="call"></ion-icon>
-					</a>
-				</section>
-				<section>
-					<a href="http://www.github/yohann69" target="_blank">
-						<ion-icon name="logo-github"></ion-icon>
-					</a>
-					<a href="https://www.linkedin.com/in/yohann-chavanel/" target="_blank">
-						<ion-icon name="logo-linkedin"></ion-icon>
-					</a>
-					<a href="http://discordapp.com/users/761216814952611910" target="_blank">
-						<ion-icon name="logo-discord"></ion-icon>
-					</a>
-					<a href="http://www.t.me/yohann69" target="_blank">
-						<ion-icon name="paper-plane"></ion-icon>
-					</a>
-				</section>
+
+			<section>
+				<form>
+					<section>
+						<h4>Sujet</h4>
+						<input type="text" placeholder="Sujet du message" name="subject" class="subject">
+					</section>
+					<section>
+						<h4>Message</h4>
+						<input type="text" placeholder="Entrez votre message ici" name="message" class="message">
+					</section>
+				</form>
+				
+				<button onclick="fillemail()">Envoyer</button>
 
 
+
+				<section class="socialsMedias">
+					<section>
+						<a href="mailto:yohann@chavanel.eu.org" class="emailaddress">
+							<ion-icon name="mail"></ion-icon>
+						</a>
+						<a href="tel:+33678139913">
+							<ion-icon name="call"></ion-icon>
+						</a>
+						<a href="http://www.github/yohann69" target="_blank">
+							<ion-icon name="logo-github"></ion-icon>
+						</a>
+						<a href="https://www.linkedin.com/in/yohann-chavanel/" target="_blank">
+							<ion-icon name="logo-linkedin"></ion-icon>
+						</a>
+						<a href="http://discordapp.com/users/761216814952611910" target="_blank">
+							<ion-icon name="logo-discord"></ion-icon>
+						</a>
+						<a href="http://www.t.me/yohann69" target="_blank">
+							<ion-icon name="paper-plane"></ion-icon>
+						</a>
+					</section>
+
+
+				</section>
 			</section>
+
 
 		</section>
 	</main>
@@ -229,6 +246,7 @@
 
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="css/main.js"></script>
 </body>
 
 </html>

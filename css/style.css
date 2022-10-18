@@ -55,6 +55,7 @@ body {
 	-webkit-user-select: none;
 	user-select: none;
 	-webkit-user-drag: none;
+	transition-duration: .1s;
 }
 
 p,
@@ -84,6 +85,11 @@ main>section {
 	padding-top: 150px;
 }
 
+
+button {
+	border: 0;
+	border-radius: var(--radius-norm);
+}
 
 /*------------------------------------------------------------
 							~ NavBar ~
@@ -179,7 +185,8 @@ nav section a {
 	width: 350px;
 	border-radius: var(--radius-norm);
 	background-color: #a69515;
-	margin-top: 50px; /*Responsive*/
+	margin-top: 50px;
+	/*Responsive*/
 }
 
 .project-small {
@@ -192,11 +199,8 @@ nav section a {
 	min-width: 100px;
 }
 
-button {
-	/* padding: 8px 28px; */
+#projects button {
 	background-color: black;
-	border: 0;
-	border-radius: var(--radius-norm);
 	width: 100%;
 	height: 100%;
 }
@@ -209,6 +213,15 @@ button {
 	background-color: #2386fe;
 	margin-top: -60px;
 	border-radius: 100px;
+}
+
+
+
+
+
+
+.autocarsLogo{
+	height: 40px !important;
 }
 
 
@@ -275,19 +288,63 @@ button {
 	background-image: url(https://ade.pages.dev/Ressources/img/bloom-mica-dark.png);
 	background-size: cover;
 	width: 95%;
-	max-width: 850px;
+	max-width: 750px;
 	height: 470px;
 	border-radius: var(--radius-middle);
 	padding: 20px;
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: space-between;
 	flex-direction: column;
 	filter: brightness(1.5);
 }
 
 #contact h2 {
 	margin: 0 0 20px;
+}
+
+
+#contact form {
+	width: 100%;
+}
+
+#contact form>section {
+	display: flex;
+	justify-content: space-around;
+}
+
+#contact form>section{
+	margin-top: 20px;
+}
+
+#contact h4{
+	width: 200px;
+	text-align: end;
+}
+
+input[type=text] {
+	width: 450px;
+	max-width: 80%;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: var(--radius-norm);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	border: 0;
+	padding: 0 15px;
+}
+
+.message {
+	height: 230px;
+}
+
+
+#contact button {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px 30px;
+}
+
+#contact button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 ion-icon {
@@ -300,14 +357,11 @@ ion-icon:hover {
 	color: #2386fe;
 }
 
-.socialsMedias section:last-child ion-icon {
+.socialsMedias ion-icon {
 	font-size: 25px;
-
-}
-
-.socialsMedias section:first-child {
 	margin-bottom: 15px;
 }
+
 
 #contact a {
 	text-decoration: none;

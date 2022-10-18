@@ -10,7 +10,20 @@ console.log("This project has been created by @Yohann69");
 
 
 /*------------------------------------------------------------
-					~ HamburgerButton ~
+					~ New Section ~
 ------------------------------------------------------------*/
 
 
+function fillemail(){
+	
+	const subject = document.querySelector('.subject').value;
+	const message = document.querySelector('.message').value;
+
+
+	const email= document.querySelector('.emailaddress');
+
+	email.href=`mailto:yohann@chavanel.eu.org?subject=${subject}&body=${message}`
+
+	email.click();
+		
+}
