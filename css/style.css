@@ -197,13 +197,31 @@ nav section a {
 	border-radius: var(--radius-middle);
 	padding: 20px;
 	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+	align-items: center;
+	justify-content: end;
 	flex-direction: column;
+	filter: brightness(1.5);
+}
+
+#contact h2 {
+	margin: 0 0 20px;
 }
 
 ion-icon {
-	font-size: 40px;
+	font-size: 35px;
 	padding: 0 10px;
 	color: white;
+}
+
+ion-icon:hover {
+	color: #2386fe;
+}
+
+.socialsMedias section:last-child ion-icon {
+	font-size: 25px;
+
+}
+
+.socialsMedias section:first-child {
+	margin-bottom: 15px;
 }
