@@ -18,8 +18,6 @@ function fillemail(){
 	
 	const subject = document.querySelector('.subject').value;
 	const message = document.querySelector('.message').value;
-
-
 	const email= document.querySelector('.emailaddress');
 
 	email.href=`mailto:yohann@chavanel.eu.org?subject=${subject}&body=${message}`

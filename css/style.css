@@ -75,14 +75,24 @@ h2 {
 	margin: 0;
 }
 
-
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
 main>section {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
 	flex-wrap: wrap;
+	width: 100%;
 	align-items: center;
 	padding-top: 150px;
+	max-width: 2000px;
+}
+main>section:first-child{
+	padding-top: 0px;
 }
 
 
@@ -104,7 +114,7 @@ header {
 
 nav {
 	height: 50px;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgb(0 0 0 / 50%);
 	border-radius: var(--radius-norm);
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
@@ -121,6 +131,7 @@ nav img {
 
 nav section a {
 	margin: 0 40px;
+	text-decoration: none;
 }
 
 
@@ -132,6 +143,7 @@ nav section a {
 
 #home {
 	height: 100vh;
+	background-color: #2386fe;
 }
 
 
@@ -139,6 +151,41 @@ nav section a {
 /*------------------------------------------------------------
 						  ~ About Me ~
 ------------------------------------------------------------*/
+
+#aboutMe h4 {
+    font-size: 130%;
+    align-items: center;
+    display: flex;
+}
+
+#aboutMe h2{
+	margin-bottom: 25px;
+}
+
+#aboutMe>section{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#aboutMe article{
+	padding: 20px 20px;
+}
+
+
+
+
+/*------------------------------------------------------------
+						  ~ Compétences ~
+------------------------------------------------------------*/
+
+
+
+
 
 
 
@@ -151,15 +198,34 @@ nav section a {
 	display: flex;
 	flex-direction: row;
 	transform: rotate(-5deg);
-	width: 100% !important;
+	width: 100%;
 	overflow: hidden;
 	flex-wrap: nowrap;
-	margin-left: -30px;
+	margin-left: -60px;
+}
+
+#pictures>section{
+	width: 120vw;
+	overflow: hidden;
+	display: flex;
+	margin-right: -200px;
+	flex-direction: row;
 }
 
 #pictures img {
 	width: 25%;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	margin-left: -100px;
 }
+
+#pictures img:last-child{
+	clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+
+
 
 
 
@@ -216,7 +282,11 @@ nav section a {
 }
 
 
-
+.ade{
+	background-image: url(https://ade.pages.dev/Ressources/img/bloom-mica-dark.png);
+	background-size: cover;
+	filter: brightness(1.3);
+}
 
 
 
