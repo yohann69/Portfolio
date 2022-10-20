@@ -75,12 +75,13 @@ h2 {
 	margin: 0;
 }
 
-main{
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
 }
+
 main>section {
 	display: flex;
 	justify-content: space-around;
@@ -91,7 +92,8 @@ main>section {
 	padding-top: 150px;
 	max-width: 2000px;
 }
-main>section:first-child{
+
+main>section:first-child {
 	padding-top: 0px;
 }
 
@@ -105,21 +107,24 @@ button {
 /* width */
 ::-webkit-scrollbar {
 	width: 10px;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 0 grey;
 	border-radius: 50px;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
 	background: #484848;
 	border-radius: 10px;
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
 	background: #303030;
-  }
+}
 
 
 
@@ -165,9 +170,21 @@ nav section a {
 
 #home {
 	height: 100vh;
-	background-color: #2386fe;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://i.imgur.com/CRj0gt9.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: -70px;
 }
 
+#home>section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#home h3 {
+	font-size: 200%
+}
 
 
 /*------------------------------------------------------------
@@ -175,16 +192,16 @@ nav section a {
 ------------------------------------------------------------*/
 
 #aboutMe h4 {
-    font-size: 130%;
-    align-items: center;
-    display: flex;
+	font-size: 130%;
+	align-items: center;
+	display: flex;
 }
 
-#aboutMe h2{
+#aboutMe h2 {
 	margin-bottom: 25px;
 }
 
-#aboutMe>section{
+#aboutMe>section {
 	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
@@ -194,7 +211,7 @@ nav section a {
 	align-items: center;
 }
 
-#aboutMe article{
+#aboutMe article {
 	padding: 20px 20px;
 }
 
@@ -226,7 +243,7 @@ nav section a {
 	margin-left: -60px;
 }
 
-#pictures>section{
+#pictures>section {
 	width: 120vw;
 	overflow: hidden;
 	display: flex;
@@ -240,7 +257,7 @@ nav section a {
 	margin-left: -100px;
 }
 
-#pictures img:last-child{
+#pictures img:last-child {
 	clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0% 100%);
 
 }
@@ -304,7 +321,7 @@ nav section a {
 }
 
 
-.ade{
+.ade {
 	background-image: url(https://ade.pages.dev/Ressources/img/bloom-mica-dark.png);
 	background-size: cover;
 	filter: brightness(1.3);
@@ -312,7 +329,7 @@ nav section a {
 
 
 
-.autocarsLogo{
+.autocarsLogo {
 	height: 40px !important;
 }
 
@@ -405,11 +422,11 @@ nav section a {
 	justify-content: space-around;
 }
 
-#contact form>section{
+#contact form>section {
 	margin-top: 20px;
 }
 
-#contact h4{
+#contact h4 {
 	width: 200px;
 	text-align: end;
 }
