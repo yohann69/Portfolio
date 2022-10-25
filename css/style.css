@@ -182,8 +182,13 @@ nav section a {
 	align-items: center;
 }
 
+#home h2 {
+	font-size: 40 0%
+}
+
 #home h3 {
-	font-size: 200%
+	font-size: 200%;
+	font-weight: 400;
 }
 
 
@@ -313,7 +318,7 @@ nav section a {
 
 #projects img {
 	width: 100px;
-	height: 100px;
+	height: 100px !;
 	padding: 5px;
 	background-color: #2386fe;
 	margin-top: -60px;
@@ -329,9 +334,9 @@ nav section a {
 
 
 
-.autocarsLogo {
+/* .autocarsLogo {
 	height: 40px !important;
-}
+} */
 
 
 
@@ -378,6 +383,12 @@ nav section a {
 .traductions {
 	background: -webkit-linear-gradient(175deg, #c30000c9, #3c41d8c9);
 	box-shadow: 3px 5px 15px #5b003ea3;
+}
+
+.traductions img {
+	border-radius: 35px;
+	width: 100px;
+	height: 100px;
 }
 
 .productTesting {
