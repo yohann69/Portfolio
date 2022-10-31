@@ -126,7 +126,9 @@ button {
 	background: #303030;
 }
 
-
+.hidden{
+	display: none;
+}
 
 /*------------------------------------------------------------
 							~ NavBar ~
@@ -140,7 +142,7 @@ header {
 }
 
 nav {
-	height: 50px;
+	min-height: 50px;
 	background: rgb(0 0 0 / 50%);
 	border-radius: var(--radius-norm);
 	-webkit-backdrop-filter: blur(20px);
@@ -159,6 +161,12 @@ nav img {
 nav section a {
 	margin: 0 40px;
 	text-decoration: none;
+}
+
+.hambuger{
+	display: none;
+	background-color: #00000000;
+	font-size: 200%;
 }
 
 
