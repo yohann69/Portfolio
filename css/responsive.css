@@ -1,8 +1,94 @@
-@media only screen and (max-width: 420px){
-    nav{
+@media only screen and (max-width: 980px) {
+
+
+    /*------------------------------------------------------------
+						   ~ Global ~
+    ------------------------------------------------------------*/
+
+    h2 {
+        font-size: 40px;
+    }
+
+
+
+    /*------------------------------------------------------------
+							~ NavBar ~
+    ------------------------------------------------------------*/
+    nav>section {
         display: none;
-    } 
-    #contributiondetails article {
-        width: 80vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*------------------------------------------------------------
+						~ Contributions ~
+    ------------------------------------------------------------*/
+
+    #contributions h2 {
+        margin-bottom: 20px;
+    }
+
+    #contributions>section {
+        width: 95%;
+    }
+
+    #contributions article {
+        height: auto;
+    }
+
+    #contributions img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .traductions img {
+        border-radius: 25px;
+    }
+
+    .description {
+        margin-right: 20px;
+    }
+
+
+
+
+    /*------------------------------------------------------------
+						~ Contacts ~
+    ------------------------------------------------------------*/
+
+    #contact>section {
+        padding: 0;
+        height: 500px;
+    }
+
+    #contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact form section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+
+    #contact h4 {
+        width: auto;
+        text-align: left;
+    }
+
+    input[type=text] {
+        max-width: 90%;
     }
 }
