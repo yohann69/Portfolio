@@ -8,7 +8,7 @@
 console.log("Welcome on Project Name");
 console.log("This project has been created by @Yohann69");
 
-function log(object){
+function log(object) {
 	console.log(object);
 }
 /*------------------------------------------------------------
@@ -37,12 +37,11 @@ function fillemail() {
 let ouvert = false;
 const menu = document.querySelector('nav>section');
 
-function hamburgerMenu(){
-	if (ouvert){
+function hamburgerMenu() {
+	if (ouvert) {
 		menu.classList.add('hidden');
 		ouvert = false;
-
-	} else{
+	} else {
 		menu.classList.remove('hidden');
 		ouvert = true;
 	}
@@ -52,17 +51,20 @@ const menuLinks = document.querySelectorAll('nav>section>a');
 
 
 
-for(let i = 0; i < menuLinks.length; i++){
-    menuLinks[i].addEventListener('click', closeMenu)
+for (let i = 0; i < menuLinks.length; i++) {
+	menuLinks[i].addEventListener('click', closeMenu)
 }
 
-function closeMenu(){
-	menu.classList.add('hidden');
-	ouvert = false;
+function closeMenu() {
+
+	if (window.innerWidth < 980) {
+		menu.classList.add('hidden');
+		ouvert = false;
+	}
 }
 
 
-if(window.innerWidth> 980){
+if (window.innerWidth > 980) {
 	menu.classList.remove('hidden');
 }
 
