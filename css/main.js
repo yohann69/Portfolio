@@ -52,6 +52,20 @@ const menuLinks = document.querySelectorAll('nav>section>a');
 
 
 
+for(let i = 0; i < menuLinks.length; i++){
+    menuLinks[i].addEventListener('click', closeMenu)
+}
+
+function closeMenu(){
+	menu.classList.add('hidden');
+	ouvert = false;
+}
+
+
+if(window.innerWidth> 980){
+	menu.classList.remove('hidden');
+}
+
 
 /*------------------------------------------------------------
 					~ Animate text ~
