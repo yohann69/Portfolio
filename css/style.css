@@ -360,7 +360,7 @@ nav section a {
 }
 
 #projects>section>article {
-	min-height: 500px;
+	min-height: 590px;
 }
 
 #projects article>section {
@@ -401,7 +401,19 @@ nav section a {
 	padding: 10px;
 }
 
+#projects article>section>p{
+	margin-bottom: 20px;
+}
 
+ul{
+	text-align: left;
+	padding-inline-start: 20px;
+	margin-block-start: 0;
+}
+
+li {
+    margin: 7px 0;
+}
 
 .ade {
 	background-image: url(https://ade.pages.dev/Ressources/img/bloom-mica-dark.png);
@@ -409,7 +421,7 @@ nav section a {
 	filter: brightness(1.3);
 }
 
-.ade article>img {
+.ade>img {
 	background-color: #16304f;
 	box-shadow: 2px 3px 10px #00306494;
 }
@@ -418,9 +430,10 @@ nav section a {
 .autoCars {
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
+	width: 430px !important;
 }
 
-.autoCars article>img {
+.autoCars>img {
 	background-color: #989898;
 	box-shadow: 2px 3px 10px #2828282f;
 	filter: invert();
@@ -429,10 +442,10 @@ nav section a {
 
 
 .portfolio {
-	background-color: var(--card-color);
+	background-color: #272727ae;
 }
 
-.portfolio article>img {
+.portfolio>img {
 	background-color: #543c1d;
 	box-shadow: 2px 3px 10px #523b00a3;
 }
